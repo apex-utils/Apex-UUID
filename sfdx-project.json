@@ -1,0 +1,20 @@
+{
+  "packageDirectories": [
+    {
+      "path": "src/apexuuid",
+      "default": false
+    },
+    {
+      "path": "src/unpackaged",
+      "default": false
+    },
+    {
+      "path": "src/untracked",
+      "default": true
+    }
+  ],
+  "name": "ApexUUID",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "52.0"
+}
