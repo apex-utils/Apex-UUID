@@ -29,7 +29,7 @@ jobs:
       run: sfdx force:org:create -f config/project-scratch-def.json --durationdays 1 --setdefaultusername --json --loglevel fatal
 
     - name: Push source
-      run sfdx force:source:push -f
+      run: sfdx force:source:push -f
 
     - name: Run Apex test
       run: sfdx force:apex:test:run -c -r human
