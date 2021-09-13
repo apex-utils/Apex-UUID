@@ -1,5 +1,4 @@
-@NamespaceAccessible
-public class UUIDv4 {
+global class UUIDv4 {
 
     private static final List<String> HEX_CHARS = new List<String> {
         '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'
@@ -16,8 +15,7 @@ public class UUIDv4 {
 
     private final String UUIDValue;
 
-    @NamespaceAccessible
-    public UUIDv4() {
+    global UUIDv4() {
         UUIDValue = generate();
     }
 
@@ -64,13 +62,11 @@ public class UUIDv4 {
         }).toUpperCase();
     }
 
-    @NamespaceAccessible
-    public static UUIDv4 valueOf(String UUIDString) {
+    global static UUIDv4 valueOf(String UUIDString) {
         return new UUIDv4(UUIDString);
     }
 
-    @NamespaceAccessible
-    public override String toString() {
+    global override String toString() {
         return UUIDValue;
     }
 
@@ -128,8 +124,7 @@ public class UUIDv4 {
         return value;
     }
 
-    @NamespaceAccessible
-    public Boolean equals(Object other) {
+    global Boolean equals(Object other) {
 
         if (other === this) {
             return true;
@@ -143,7 +138,7 @@ public class UUIDv4 {
             try {
                 return equals((String)other);
             }
-            catch (UUIDv4.UUIDException ex) {
+            catch (UUIDException ex) {
                 return false;
             }
         }
@@ -151,8 +146,7 @@ public class UUIDv4 {
         return false;
     }
 
-    @NamespaceAccessible
-    public Boolean equals(UUIDv4 other) {
+    global Boolean equals(UUIDv4 other) {
         if (other === this) {
             return true;
         }
@@ -160,16 +154,11 @@ public class UUIDv4 {
         return this.UUIDValue.equalsIgnoreCase(other.UUIDValue);
     }
 
-    @NamespaceAccessible
-    public Boolean equals(String other) {
+    global Boolean equals(String other) {
         return this.equals(UUIDv4.parse(other));
     }
 
-    @NamespaceAccessible
-    public Integer hashCode() {
+    global Integer hashCode() {
         return this.UUIDValue.hashCode();
     }
-
-    @NamespaceAccessible
-    public class UUIDException extends Exception { }
 }

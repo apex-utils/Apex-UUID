@@ -80,7 +80,7 @@ public class UUIDTests {
             // assert
             System.assert(false, 'exception expected but none thrown');
         }
-        catch (UUIDv4.UUIDException UUIDEx) {
+        catch (UUIDException UUIDEx) {
             System.assert(true, 'exception expected');
         }
         catch (Exception ex) {

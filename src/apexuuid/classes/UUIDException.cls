@@ -1,0 +1,1 @@
+global class UUIDException extends Exception { }

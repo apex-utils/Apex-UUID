@@ -1,20 +1,29 @@
 {
-  "packageDirectories": [
-    {
-      "path": "src/apexuuid",
-      "default": false
-    },
-    {
-      "path": "src/unpackaged",
-      "default": false
-    },
-    {
-      "path": "src/untracked",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "src/apexuuid",
+            "default": false,
+            "package": "UUIDUnlocked",
+            "versionName": "ver 0.1",
+            "versionNumber": "1.0.0.NEXT"
+        },
+        {
+            "path": "src/unpackaged",
+            "default": false
+        },
+        {
+            "path": "src/untracked",
+            "default": true
+        }
+    ],
+    "name": "ApexUUID",
+    "namespace": "uuid",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "52.0",
+    "packageAliases": {
+        "UUIDUnlocked": "0Ho1K000000PAwoSAG",
+        "UUIDUnlocked@0.1.0-1": "04t1K000002b0Q1QAI",
+        "UUIDUnlocked@1.0.0-0": "04t1K000002b0Q6QAI",
+        "UUIDUnlocked@1.0.0-1": "04t1K000002b0QBQAY"
     }
-  ],
-  "name": "ApexUUID",
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "52.0"
 }
