@@ -1,6 +1,6 @@
 # Apex-Utils - UUID
 
-This repository contains a free, open source implementation of the UUIDv4 spec written for Salesforce Apex. This app is provided as-is with no warranty under the (MIT License)[https://opensource.org/licenses/MIT]. See the license file for details.
+This repository contains a free, open source implementation of the UUIDv4 spec written for Salesforce Apex. This app is provided as-is with no warranty under the [MIT License](https://opensource.org/licenses/MIT). See the license file for details.
 
 # Installation
 
