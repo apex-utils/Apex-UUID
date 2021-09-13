@@ -21,7 +21,7 @@ jobs:
     - name: Authenticate DevHub
       run: |
         echo "${SFDX_AUTH_URL}" > urlfile
-        sfdx force:auth:sfdxurl:store -f urlfile
+        sfdx force:auth:sfdxurl:store -f urlfile -a devhub -d
       env:
         SFDX_AUTH_URL: ${{ secrets.SFDX_AUTH_URL }}
 
