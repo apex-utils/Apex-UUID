@@ -7,7 +7,7 @@ This repository contains a free, open source implementation of the UUIDv4 spec w
 This package can be installed in an unlocked (fully editable) form using the following SF CLI command:
 
 ```
-sfdx force:package:install -p 04t1K000002b0QBQAY
+sfdx force:package:install -p [package id - see releases page]
 ```
 
 There is no installation key.
