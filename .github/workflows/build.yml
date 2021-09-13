@@ -20,10 +20,10 @@ jobs:
 
     - name: Authenticate DevHub
       run: |
-        echo "${SALESFORCE_JWT_SECRET_KEY}" > server.key
-        sfdx force:auth:jwt:grant --clientid ${{ secrets.SALESFORCE_CONSUMER_KEY }} --jwtkeyfile server.key --username ${{ secrets.SALESFORCE_DEVHUB_USERNAME}} --setdefaultdevhubusername -a devhub
+        echo "${SFDX_AUTH_URL}" > urlfile
+        sfdx force:auth:sfdxurl:store -f urlfile
       env:
-        SALESFORCE_JWT_SECRET_KEY: ${{ secrets.SALESFORCE_JWT_SECRET_KEY }}
+        SFDX_AUTH_URL: ${{ secrets.SFDX_AUTH_URL }}
 
     - name: Create scratch org
       run: sfdx force:org:create -f config/project-scratch-def.json --durationdays 1 --setdefaultusername --json --loglevel fatal
